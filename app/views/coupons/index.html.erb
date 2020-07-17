@@ -1,0 +1,6 @@
+<h1> I'm the INDEX PAGE!! </h1>
+
+<label> Coupons: </label>
+<% @coupons.each do |coupon|  %>
+<p><%= link_to "Store:  " + coupon.store + "   ----   Code:  " + coupon.coupon_code, coupon_path(coupon)  %> </p>
+<% end %>
